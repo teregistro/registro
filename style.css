@@ -9,21 +9,56 @@ html {
 body {
   font-family: "Raleway", sans-serif;
 }
+.wrapper {
+  width: 90%; /* Establecemos que el ancho sera del 90% */
+  max-width: 1500px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+  margin: auto; /* Centramos los elementos */
+  overflow: hidden; /* Eliminamos errores de float */
+}
+
+header .logo {
+  color: #d62828;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 150px;
+  float: left;
+}
+
+header nav {
+  float: right;
+  line-height: 150px;
+}
+
+header nav a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 20px;
+  line-height: normal;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  background: #d62828;
+  border-radius: 8px;
+}
 
 .hero {
   background-image: linear-gradient(
       to right,
-      rgba(72, 71, 71, 0.63) 0%,
-      rgba(48, 67, 82, 0.801) 100%
+      rgba(72, 71, 71, 0) 0%,
+      rgba(48, 67, 82, 0.109) 100%
     ),
     /* background-image: linear-gradient(
       to top,
       rgba(106, 133, 182, 0.705) 0%,
       rgba(186, 200, 224, 0.507) 100%
     ), */
-      url("./img/header.jpeg");
+      url("./img/header_1.jpg");
   width: 100%;
-  height: 711px;
+  height: 650px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -43,7 +78,6 @@ body {
 
 .textos-hero h1 {
   font-size: 60px;
-  margin-top: 200px;
 }
 
 .textos-hero p {
@@ -119,7 +153,7 @@ body {
 .cta {
   display: inline-block;
   text-decoration: none;
-  background-color: tomato;
+  background-color: #803eeb;
   padding: 12px 15px;
   border-radius: 8px;
   color: white;
@@ -128,7 +162,7 @@ body {
 /* Info*/
 
 .info {
-  background: tomato;
+  background: #d62828;
   color: white;
 }
 
@@ -253,8 +287,61 @@ input[type="submit"]:hover {
   color: tomato;
   background: white;
 }
+.btn-wsp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  line-height: 63px;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 35px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: all 300ms ease;
+}
+.btn-wsp:hover {
+  background: #20ba5a;
+}
 
+/* responsive */
 @media screen and (max-width: 800px) {
+  .wrapper {
+    width: 50%; /* Establecemos que el ancho sera del 90% */
+    max-width: 500px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+    margin: auto; /* Centramos los elementos */
+    overflow: hidden; /* Eliminamos errores de float */
+  }
+
+  header .logo {
+    color: #f2f2f2;
+    font-size: 50px;
+    line-height: 150px;
+    float: left;
+  }
+
+  header nav {
+    float: right;
+    line-height: 150px;
+  }
+
+  header nav a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    background: #d62828;
+    border-radius: 8px;
+  }
   .textos-hero h1 {
     text-align: center;
     font-size: 50px;
@@ -304,6 +391,11 @@ input[type="submit"]:hover {
     width: 98%;
     margin-bottom: 20px;
   }
+  .btn-wsp {
+    width: 63px;
+    height: 63px;
+    line-height: 66px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -326,5 +418,10 @@ input[type="submit"]:hover {
 
   .galeria-cont > img {
     width: 97%;
+  }
+  .btn-wsp {
+    width: 63px;
+    height: 63px;
+    line-height: 66px;
   }
 }
