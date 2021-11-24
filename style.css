@@ -17,10 +17,10 @@ body {
 }
 
 header .logo {
-  color: #d62828;
-  font-size: 50px;
-  font-weight: bold;
+  color: #12bc7e;
+  font-size: 40px;
   line-height: 150px;
+  list-style-position: inherit;
   float: left;
 }
 
@@ -56,7 +56,7 @@ header nav a {
       rgba(106, 133, 182, 0.705) 0%,
       rgba(186, 200, 224, 0.507) 100%
     ), */
-      url("./img/header_1.jpg");
+      url("./img/portada.jpeg");
   width: 100%;
   height: 650px;
   background-repeat: no-repeat;
@@ -90,7 +90,7 @@ header nav a {
   display: inline-block;
   text-decoration: none;
   padding: 12px 15px;
-  background: #d62828;
+  background: #25d366;
   border-radius: 8px;
   color: white;
 }
@@ -153,7 +153,7 @@ header nav a {
 .cta {
   display: inline-block;
   text-decoration: none;
-  background-color: #803eeb;
+  background-color: #767c8c;
   padding: 12px 15px;
   border-radius: 8px;
   color: white;
@@ -162,7 +162,8 @@ header nav a {
 /* Info*/
 
 .info {
-  background: #d62828;
+  background: linear-gradient(to bottom, #25d366, #12bc7e);
+  /* background: #25d366; */
   color: white;
 }
 
@@ -178,8 +179,9 @@ header nav a {
 .card {
   width: 30%;
   text-align: center;
-  height: 300px;
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 5);
+  height: 450px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 5);
+  border-radius: 8px;
   transform: scale(1);
   transition: transform 0.6s;
 }
@@ -191,15 +193,25 @@ header nav a {
 }
 
 .card i {
-  margin: 30px 0 20px 0;
-  color: #cc9199;
-  font-size: 50px;
+  margin: 60px 0 20px 0;
+  color: #25d366;
+  font-size: 80px;
 }
 
 .card p {
   font-weight: 300;
-  font-size: 25px;
-  margin-bottom: 10px;
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+  margin-bottom: 1px;
+}
+.card .titlea {
+  font-size: 20px;
+  /* padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 0.5 px;
+  padding-top: 5px; */
+  color: #075e54;
 }
 
 /* galeria*/
@@ -237,6 +249,7 @@ header nav a {
 
 .last-section img {
   width: 48%;
+  padding-top: 40px;
 }
 
 .last-section.contenedor-textos-main {
@@ -246,7 +259,7 @@ header nav a {
 /* footer*/
 
 footer {
-  background: #d62828;
+  background: #12bc7e;
   color: white;
 }
 
